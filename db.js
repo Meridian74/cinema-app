@@ -2,26 +2,26 @@ const movieList = {
    currency: "HUF",
    movies: [
        {
-           title: "Frozen 2",
-           price: 80
+           title: "007 Nincs idő meghalni",
+           price: 1900
        },
        {
-           title: "Joker",
-           price: 120
+           title: "Hasadék",
+           price: 1200
        },
        {
-           title: "Sonic",
-           price: 110
+           title: "Eleven kór",
+           price: 1700
        },
        {
-           title: "The Gentlemen",
-           price: 90
+           title: "Toxikoma",
+           price: 1500
        }
    ]
 };
 const seatsDetails = {
-   rows: 6,
-   columns: 8,
+   rows: 12,
+   columns: 14,
    occupied: [11, 12, 28, 29, 35, 36, 37, 38, 44]
 };
 
