@@ -13,14 +13,9 @@
             <div class="select-container">
                <div class="menu-container">
                   <label for="movies-list">Válasszd ki a filmet:</label>
-
-                  <select name="movies-list" id="movies">
-                     <option value="100">Mozi film cím 1.</option>
-                     <option value="200">Mozi film cím 2.</option>
-                     <option value="120">Mozi film cím 3.</option>
-                     <option value="140">Mozi film cím 4.</option>
-                  </select>
+                  <select name="movies-list" id="movies-list"></select>
                </div>
+
                <ul class="legend-container">
                   <li>
                      <div class="available-seat"></div>
@@ -35,67 +30,25 @@
                      <span>Foglalt</span>
                   </li>
                </ul>
+
             </div>
          </div>
+
          <div class="cinema-container">
             <div class="canvas"></div>
-            <div class="seats">
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-               <div class="available-seat"></div>
-            </div>
+            <div class="seats"></div>
+
          </div>
+
          <div class="price-reset-container">
-            <p><span>0</span> széket választottál ki, összesen fizetendő: <span>0</span> HUF.</p>
+            <p><span id="counter">0</span> helyet választottál ki, összesen fizetendő: 
+               <span id="amount">0</span> HUF.</p>
             <div class="reset">Reset</div>
+
          </div>
+
       </div>
 
-      <script src="app.js"></script>
+      <script src="app.js" type="module"></script>
    </body>
 </html>
