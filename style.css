@@ -146,7 +146,6 @@ div.reset:hover {
    transform: scale(1.2);
 }
 
-
 .price-reset-container {
    grid-area: reset;
 }
