@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Cinema App</title>
-</head>
-<body>
-   <div class="wrapper">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Cinema App</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="movie-details-container">
+            <div class="select-container">
+               <div class="menu-container">
+                  <label for="movies">Válasszd ki a filmet:</label>
 
+                  <select name="movies" id="movies">
+                     <option value="100">Mozi film cím 1.</option>
+                     <option value="200">Mozi film cím 2.</option>
+                     <option value="120">Mozi film cím 3.</option>
+                     <option value="140">Mozi film cím 4.</option>
+                  </select>
+               </div>
+               <ul class="legend-container">
+                  <li>
+                     <div></div>
+                     <span>Szabad</span>
+                  </li>
+                  <li>
+                     <div></div>
+                     <span>Kiválasztott</span>
+                  </li>
+                  <li>
+                     <div></div>
+                     <span>Foglalt</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="cinema-container">
+            <div class="canvas"></div>
+            <div class="seats">
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+               <div class="avaiable-seat"></div>
+            </div>
 
+         </div>
+         <div class="price-reset-container">
+            <p><span>0</span> széket választottál ki, összesen fizetendő: <span>0</span>HUF.</p>
+            <div class="reset">Reset</div>
+         </div>
+      </div>
 
-   </div>
-
-   <script src="app.js"></script>
-</body>
+      <script src="app.js"></script>
+   </body>
 </html>
