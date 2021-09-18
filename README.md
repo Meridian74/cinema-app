@@ -1,1 +1,1 @@
-# cinema-app
+# This is a practicing projekt for JavaScript and CSS grid
