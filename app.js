@@ -3,6 +3,8 @@ import { movieList, seatsDetails } from "./db.js";
 const movieSelected = document.getElementById("movies-list");
 const seatsContainer = document.querySelector(".cinema-container .seats");
 const resetButton = document.querySelector(".price-reset-container .reset");
+const buyButton = document.querySelector(".price-reset-container .buy");
+const eraseAllButton = document.querySelector(".price-reset-container .erase-all");
 const counter = document.getElementById("counter");
 const amount = document.getElementById("amount");
 
@@ -73,6 +75,16 @@ const populatedUI = () => {
    populateFromLOcalStorage();
 }
 
+function deleteAllState() {
+   counter.innerText = 0;
+   amount.innerText = 0;
+   
+   movieSelected.selectedIndex = 0;
+   ticketPrice = movieSelected.value;
+
+   localStorage.clear();
+   localStorage.setItem("selectedMovieIndex", 0);
+}
 
 // ---- init ----
 populatedUI();
@@ -100,12 +112,27 @@ resetButton.addEventListener("click", () => {
       .querySelectorAll(".seats .available-seat.selected")
       .forEach(seat => seat.classList.remove("selected"));
    
-   counter.innerText = 0;
-   amount.innerText = 0;
-   
-   movieSelected.selectedIndex = 0;
-   ticketPrice = movieSelected.value;
+   deleteAllState();
+});
 
-   localStorage.clear();
-   localStorage.setItem("selectedMovieIndex", 0);
+buyButton.addEventListener("click", () => {
+   document
+      .querySelectorAll(".seats .available-seat.selected")
+      .forEach(seat => {
+         seat.classList.remove("selected");
+         seat.classList.add("occupied");
+      });
+   
+   deleteAllState();
+});
+
+eraseAllButton.addEventListener("click", () => {
+   document
+      .querySelectorAll(".seats .available-seat")
+      .forEach(seat => {
+         seat.classList.remove("selected");
+         seat.classList.remove("occupied");
+      });
+   
+   deleteAllState();
 });
